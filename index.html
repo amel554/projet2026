@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Plateforme de Tirage au Sort du Hadj</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="page">
+
+    <div class="card">
+
+        <div class="top-text">
+            <p>Republique Algerienne Democratique et Populaire</p>
+            <p>Plateforme officielle du tirage au sort</p>
+        </div>
+
+        <div class="logo-box">
+            <img src="logo.png" alt="logo">
+        </div>
+
+        <div class="main-title">
+            <h1>Plateforme de Tirage au Sort du Hadj</h1>
+            <h2>Saison 1447 / 2026</h2>
+        </div>
+
+        <div class="info-box">
+            <p>
+                Bienvenue sur l'espace public de la plateforme.
+                Cette application permet de consulter les informations,
+                creer un compte et consulter les resultats du tirage.
+            </p>
+        </div>
+
+        <div class="rules-box">
+            <h3>Regles principales</h3>
+            <ul>
+                <li>Creer un compte obligatoire</li>
+                <li>Inscription ouverte selon periode</li>
+                <li>Age minimum : 18 ans</li>
+            </ul>
+        </div>
+
+        <div class="results-box">
+            <h3>Resultats des tirages precedents</h3>
+
+            <div class="result-card">
+                <h4>Tirage Hadj 2025</h4>
+                <p>Date : 10 Juin 2025</p>
+
+                <details>
+                    <summary>Consulter les resultats</summary>
+                    <ul>
+                        <li>Amine Benali - Alger</li>
+                        <li>Sara Kaci - Oran</li>
+                        <li>Yacine Toumi - Constantine</li>
+                    </ul>
+                </details>
+            </div>
+
+            <div class="result-card">
+                <h4>Tirage Hadj 2024</h4>
+                <p>Date : 12 Juin 2024</p>
+
+                <details>
+                    <summary>Consulter les resultats</summary>
+                    <ul>
+                        <li>Karim Bensalem - Alger</li>
+                        <li>Nadia Cherif - Annaba</li>
+                        <li>Rachid Hamdi - Tlemcen</li>
+                    </ul>
+                </details>
+            </div>
+
+        </div>
+
+        <div class="buttons">
+            <a id="loginLink" href="login.php" class="btn btn-light">Se connecter</a>
+            <a id="signupLink" href="signup.php" class="btn btn-gold">Creer un compte</a>
+        </div>
+
+        <div class="footer-text">
+            <p>© 2026 Plateforme du Hadj - Algerie</p>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    (function () {
+        const isLocalFile = window.location.protocol === "file:";
+        const isLiveServer = window.location.port === "5501";
+
+        if (!isLocalFile && !isLiveServer) {
+            return;
+        }
+
+        const baseUrl = "http://localhost/projet_p/";
+        const loginLink = document.getElementById("loginLink");
+        const signupLink = document.getElementById("signupLink");
+
+        if (loginLink) {
+            loginLink.href = baseUrl + "login.php";
+        }
+
+        if (signupLink) {
+            signupLink.href = baseUrl + "signup.php";
+        }
+    })();
+</script>
+
+</body>
+</html>

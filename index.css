@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    min-height: 100vh;
+    background:
+    linear-gradient(rgba(10,40,35,0.4), rgba(10,40,35,0.4)),
+    url("https://images.unsplash.com/photo-1564769625905-50e93615e769");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.card {
+    width: 850px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 20px;
+    padding: 30px;
+    backdrop-filter: blur(6px);
+    text-align: center;
+}
+
+.logo-box {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    background: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.logo-box img {
+    width: 100%;
+}
+
+.main-title h1 {
+    font-size: 32px;
+}
+
+.main-title h2 {
+    color: #f0d27a;
+    margin-bottom: 20px;
+}
+
+.info-box, .rules-box {
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.rules-box h3 {
+    text-align: center;
+    color: #f0d27a;
+}
+
+.rules-box ul {
+    margin-top: 10px;
+}
+
+.rules-box li {
+    margin-bottom: 5px;
+}
+
+/* RESULTATS */
+.results-box {
+    margin-top: 20px;
+}
+
+.result-card {
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+summary {
+    cursor: pointer;
+    color: #f0d27a;
+    margin-top: 10px;
+}
+
+details ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.btn-light {
+    background: white;
+    color: black;
+}
+
+.btn-gold {
+    background: #d4af37;
+    color: white;
+}
+
+.footer-text {
+    margin-top: 15px;
+    font-size: 12px;
+}
